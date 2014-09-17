@@ -1,2 +1,5 @@
 /.vagrant
 *.pyc
+
+# coverage reports
+.coverage
