@@ -11,3 +11,6 @@ def test_buzz():
 
 def test_fizzbuzz():
     assert_equal("FizzBuzz", fizzbuzz(15))
+
+def test_returns_num():
+    assert_equal(str(2), fizzbuzz(2))
