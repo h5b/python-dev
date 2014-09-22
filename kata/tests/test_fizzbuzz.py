@@ -6,8 +6,6 @@ from nose.tools import assert_not_equal
 from nose.tools import raises
 
 from kata.kata.fizzbuzz import fizzbuzz
-from util.list_helper import intersect
-from util.list_helper import exclusive
 
 
 class TestFizzBuzz:
