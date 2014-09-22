@@ -22,17 +22,13 @@ class TestFizzBuzz:
 
 
     def test_fizz(self):
-        for n in self.L_fizzes:
-            assert_equal("Fizz", fizzbuzz(n))
+        [assert_equal("Fizz", fizzbuzz(n)) for n in self.L_fizzes]
 
     def test_buzz(self):
-        for n in self.L_buzzes:
-            assert_equal("Buzz", fizzbuzz(n))
+        [assert_equal("Buzz", fizzbuzz(n)) for n in self.L_buzzes]
 
     def test_fizzbuzz(self):
-        for n in self.L_fizzbuzzes:
-            assert_equal("FizzBuzz", fizzbuzz(n))
+        [assert_equal("FizzBuzz", fizzbuzz(n)) for n in self.L_fizzbuzzes]
 
     def test_returns_num(self):
-        for n in self.L_integers:
-            assert_equal(str(n), fizzbuzz(n))
+        [assert_equal(str(n), fizzbuzz(n)) for n in self.L_integers]
