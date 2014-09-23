@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 from nose.tools import assert_equal
 from nose.tools import assert_not_equal
 

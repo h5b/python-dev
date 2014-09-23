@@ -1,3 +1,6 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 """
 Write a program that prints the numbers from 1 to 100.
 But for multiples of three print "Fizz" instead of the
@@ -7,6 +10,9 @@ For numbers which are multiples of both print "FizzBuzz".
 
 def fizzbuzz(num):
     result = ""
+
+    if not isinstance(num, int):
+        raise TypeError("arg must be an integer, not {0}".format(type(num)))
 
     if (num % 15 == 0):
         result = "FizzBuzz"
