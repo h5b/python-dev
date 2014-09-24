@@ -1,2 +1,2 @@
 # TODO
-- Add project description
+- Provide PEP8 codings style helper
