@@ -25,10 +25,10 @@ def square_of_sum(upper_limit):
     sum = reduce(lambda x, y: x + y, range(1, upper_limit + 1))
     return sum**2
 
-def difference_of_sum_and_square(upper_limit):
+def difference_between_sum_and_square(upper_limit):
     return (square_of_sum(upper_limit) - sum_of_squares(upper_limit))
 
 
 if __name__ == "__main__": # pragma: no cover
-    result = difference_of_sum_and_square(100)
+    result = difference_between_sum_and_square(100)
     print "difference(1 to 100): {0}".format(result)
