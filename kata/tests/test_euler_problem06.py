@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 from nose.tools import assert_equal
-from nose.tools import assert_not_equal
-from nose.tools import raises
 
 from kata.kata.euler_problem_06 import difference_between_sum_and_square
 from kata.kata.euler_problem_06 import square_of_sum
