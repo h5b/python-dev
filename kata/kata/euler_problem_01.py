@@ -11,8 +11,14 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
 def sum_of_multiples_of_3_or_5_below(number):
-    return 23
+    multiples = filter(lambda x: x % 3 == 0 or x % 5 == 0, range(1, number))
+
+    if not multiples:
+        return 0
+
+    return reduce(lambda x, y: x + y, multiples)
+
 
 if __name__ == "__main__": # pragma: no cover
-    result = sum_of_multiples_of_3_or_5_below(10)
-    print "sum of multiples of 3 or 5 below {0}: {1}".format(10, result)
+    result = sum_of_multiples_of_3_or_5_below(1000)
+    print "sum of multiples of 3 or 5 below {0}: {1}".format(1000, result)
