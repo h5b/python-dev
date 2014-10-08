@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from util.math_helper import lcm
+
 """
 Euler Project - Problem 5
 Smallest multiple
@@ -12,7 +14,7 @@ of the numbers from 1 to 20?
 """
 
 def least_common_multiple_from_1_to(number):
-    return 2520
+    return reduce(lambda x, y: lcm(x, y), range(1, number + 1))
 
 
 if __name__ == "__main__": # pragma: no cover
